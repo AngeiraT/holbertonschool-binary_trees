@@ -17,7 +17,7 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 	left_child = binary_tree_node(parent, value); /* calling function */
 	if (!left_child) /* check for malloc fails */
 		return (NULL);
-	if (parent->right) /* check for existing left child */
+	if (parent->left) /* check for existing left child */
 	{
 		left_child->left = parent->left;
 		left_child->left->parent = left_child;
