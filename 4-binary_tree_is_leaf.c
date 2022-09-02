@@ -10,8 +10,8 @@ int binary_tree_is_leaf(const binary_tree_t *node)
 {
 	if (!node) /* if node is null return 0 */
 		return (0);
-        /*otherwise return true if neither left or right leaves exist */
-	if (!(node->left) && !(node->right)) 
+    /*otherwise return true if neither left or right leaves exist */
+    if (!(node->left) && !(node->right))
 		return (1);
 	return (0);
 }
