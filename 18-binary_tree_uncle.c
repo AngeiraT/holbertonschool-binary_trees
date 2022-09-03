@@ -27,6 +27,6 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 {
 	if (!node || !(node->parent))/* check node */
-		return (NULL);
-	return (binary_tree_sibling(node->parent));/* an uncle is just a parent's sibling */
+		return (NULL);/* an uncle is just a parent's sibling */
+	return (binary_tree_sibling(node->parent));
 }
